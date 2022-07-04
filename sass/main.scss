@@ -1,0 +1,26 @@
+@import "./utils/vars";
+// Base styls
+
+@import "./base/base";
+
+// components styles
+@import "./components/contacts";
+@import "./components/button";
+@import "./components/social-links";
+@import "./components/modal";
+@import "./components/form";
+
+// layout
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/example";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/filters";
+@import "./layout/projects";
+@import "./layout/footer";
+@import "./layout/join";
+@import "./layout/subscribe";
+
