@@ -1,7 +1,10 @@
 .customers {
   padding-top: 60px;
   padding-bottom: 60px;
-
+ 
+  @media screen and (min-width:480px) {
+    width: 768px;
+  }
 &__title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -12,6 +15,7 @@
   margin-bottom: 30px;
 }
 &__list {
+
   // display: block;
 //   display: flex;
 //   flex-direction: column;
@@ -29,6 +33,15 @@
       flex-wrap: wrap;
   gap: var(--indent);
 
+   @media screen and (min-width:480px) {
+  // width: 354px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+  --items: 3;
+  --indent: 30px;
+  }
 }
 
 }
@@ -49,6 +62,11 @@
   height: 92px;
   text-align: center;
   transition: border-color 800ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width:480px) {
+    width: 226px;
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
 
 &:hover,
 &:focus {

@@ -2,6 +2,9 @@
   background-color: var(--btn-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width:480px) {
+    width: 768px;
+  }
 
 
 &__title {
@@ -15,16 +18,17 @@
     background-color: var(--btn-color);
 }
 
-// &__list {
-//   display: block;
-//   width: 100%;
-//   margin-bottom: 30px;
-//   display: flex;
-//   flex-wrap: nowrap;
-//   gap: var(--indent);
-//   --items: 1;
-//   --indent: 30px;
-// }
+&__list {
+  @media screen and (min-width:480px) {
+  // width: 354px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+  --items: 2;
+  --indent: 30px;
+  }
+}
 
 
 &__item {

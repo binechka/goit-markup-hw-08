@@ -12,6 +12,9 @@
   color: #ffffff;
   margin-bottom: 20px;
   margin-top: 60px;
+  @media screen and (min-width:480px) {
+    margin-top: 0;
+  }
 }
 &__list {
   display: flex;

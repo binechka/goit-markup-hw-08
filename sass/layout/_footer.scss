@@ -25,11 +25,19 @@
   margin-bottom: 0;
   //  gap: 70px;
 
+    
   &__item {
     text-align: center;
   }
 }
 
+.top-item {
+    @media screen and (min-width:480px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 
 .navigation__link {
   color: var(--primary-bg-color);

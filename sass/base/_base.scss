@@ -31,6 +31,12 @@ p {
     margin-left: auto;
     margin-right: auto;
     outline: 1px solid teal;
+
+    @media screen and (min-width: 480px) {
+        width: 768px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .list {

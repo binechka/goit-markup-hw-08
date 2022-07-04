@@ -24,6 +24,18 @@
   // width: 100%;
   // display: flex;
   margin-bottom: 0;
+  --indent: 30px;
+  --items: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+
+}
+
+&__item {
+  @media screen and (min-width:480px) {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items))
+  }
 }
 
 // &__item:not(:last-child) {
@@ -49,6 +61,9 @@
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
+  @media screen and (min-width:480px) {
+    width: 354px;
+  }
 }
 
 
@@ -61,6 +76,10 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   text-align: center;
+  @media screen and (min-width:480px) {
+    text-align: left;
+    
+  }
 }
 
 &__txt {
