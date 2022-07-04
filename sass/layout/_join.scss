@@ -1,5 +1,5 @@
 .join {
-  margin-right: 23px;
+  // margin-right: 23px;
 
 &__title {
   font-family: var(--main-font);
@@ -11,12 +11,14 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  margin-top: 60px;
 }
 &__list {
   display: flex;
   flex-direction: row;
   gap: 10px;
   text-align: center;
+  justify-content: center;
 }
 
 }

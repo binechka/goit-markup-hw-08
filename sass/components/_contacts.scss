@@ -5,7 +5,8 @@
 }
 
 .contacts__link {
-  display: flex;
+  display: none;
+  // display: flex;
     gap: 10px;
     align-items: center;
   color: var(--primary-text-color);
