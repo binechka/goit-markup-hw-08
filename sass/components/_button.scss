@@ -8,13 +8,23 @@
   font-size: 16px;
 
 &__list {
+  // display: flex;
+  //   flex-direction: row;
+  //   justify-content: flex-start;
+  display: flex;
+  min-width: 362px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+   background-color: var(--primary-bg-color);
+
+  @media screen and (min-width:480px) {
   display: flex;
   justify-content: center;
-  background-color: var(--primary-bg-color);
-  margin-bottom: 50px;
+  margin-bottom: 14px;
+    }
 }
 &__item:not(:last-child) {
-  margin-right: 9px;
+  margin-right: 8px;
 }
 }
 

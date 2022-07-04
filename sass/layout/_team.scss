@@ -2,9 +2,13 @@
   background-color: var(--btn-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width:480px) {
-    width: 768px;
+  @media screen and (min-width:768px) {
+  padding-top: 94px;
+  padding-bottom: 94px;
   }
+  // @media screen and (min-width:480px) {
+  //   width: 768px;
+  // }
 
 
 &__title {
@@ -26,6 +30,13 @@
   flex-wrap: wrap;
   gap: var(--indent);
   --items: 2;
+  --indent: 30px;
+  }
+  @media screen and (min-width:768px) {
+      display: flex;
+  flex-wrap: nowrap;
+  gap: var(--indent);
+  --items: 4;
   --indent: 30px;
   }
 }
