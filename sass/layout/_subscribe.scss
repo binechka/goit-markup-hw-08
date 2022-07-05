@@ -19,6 +19,9 @@
   margin-top: 60px;
 
   color: #ffffff;
+  @media screen and (min-width:768px) {
+    margin-top: 0;
+  }
   @media screen and (min-width:1200px) {
     margin-top: 0;
   }

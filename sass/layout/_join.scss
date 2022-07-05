@@ -1,5 +1,9 @@
 .join {
   // margin-right: 23px;
+  @media screen and (min-width:768px) {
+    margin-bottom: 60px;
+  }
+ 
 
 &__title {
   font-family: var(--main-font);

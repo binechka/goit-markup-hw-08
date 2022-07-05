@@ -3,6 +3,14 @@
 //   gap: 30px;
 //   align-items: center;
 // }
+.contacts {
+  @media screen and (min-width:1200px) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+    ;
+  }
+}
 
 .contacts__link {
   display: none;
