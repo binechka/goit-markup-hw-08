@@ -12,6 +12,13 @@
   flex-wrap: wrap;
   gap: var(--indent);
   }
+  @media screen and (min-width:1200px) {
+      --indent: 30px;
+  --items: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+  }
  
 
 
