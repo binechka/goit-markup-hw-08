@@ -6,7 +6,7 @@
 
 .contacts__link {
   display: none;
-  @media screen  and (min-width:480px) {
+  @media screen  and (min-width:768px) {
  display: flex;
   color: var(--primary-text-color);
   font-family: var(--main-font);

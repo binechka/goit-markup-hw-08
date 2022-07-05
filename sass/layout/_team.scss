@@ -2,7 +2,7 @@
   background-color: var(--btn-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:1200px) {
   padding-top: 94px;
   padding-bottom: 94px;
   }
@@ -23,7 +23,7 @@
 }
 
 &__list {
-  @media screen and (min-width:480px) {
+  @media screen and (min-width:768px) {
   // width: 354px;
   margin-bottom: 30px;
   display: flex;
@@ -32,7 +32,7 @@
   --items: 2;
   --indent: 30px;
   }
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:1200px) {
       display: flex;
   flex-wrap: nowrap;
   gap: var(--indent);
@@ -46,6 +46,12 @@
   background-color: var(--primary-bg-color);
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   margin-bottom: 30px;
+  @media screen and (min-width:768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width:1200px) {
+    margin-bottom: 0;
+  }
 }
 
 &__img {

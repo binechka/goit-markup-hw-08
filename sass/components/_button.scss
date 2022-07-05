@@ -16,8 +16,10 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
    background-color: var(--primary-bg-color);
+   gap: 15px;
 
-  @media screen and (min-width:480px) {
+
+  @media screen and (min-width:768px) {
   display: flex;
   justify-content: center;
   margin-bottom: 14px;
@@ -27,6 +29,7 @@
   margin-right: 8px;
 }
 }
+
 
 .button-primary {
   background-color: var(--button-bg-color);
