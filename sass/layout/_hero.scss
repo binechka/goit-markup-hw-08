@@ -16,12 +16,15 @@
   line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @media screen and (min-width:1200px) {
+    font-size: 44px;
+  line-height: 1.36;
+  }
 }
 
 }
 
 .overlay {
-  // max-width: 1600px;
   height: 400px;
   outline: 1px solid black;
   min-width: 480px;
@@ -33,16 +36,44 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/logo-background.jpg);
+    url(../images/logo/logo_sm.jpg);
   background-repeat: no-repeat;
   background-position: center;
  background-size: cover;
- @media screen and (min-width:768px) {
-  min-width: 768px;
- }
- @media screen and (min-width:1200px) {
-  min-width: 1200px;
-  height: 600px;
- }
-}
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/logo/logo_sm@2x.jpg);
+  }
+@media screen and (min-width: 768px) {
+  max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/logo/logo_md.jpg);
 
+       @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/logo/logo_md@2x.jpg);
+    }
+
+}
+@media screen and (min-width: 1200px) {
+  max-width: 1600px;
+  height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/logo/logo_lg.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/logo/Img_lg@2x.jpg);
+    }
+  }
+
+}

@@ -8,9 +8,16 @@
     // width: 768px;
   }
   @media screen and (min-width:1200px) {
+    padding-top: 94px;
+  padding-bottom: 94px;
      background-color: var(--footer-bg-color);
+    display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+   gap: 70px;
+}
     // width: 1200px;
-  }
+  
 
 &__logo {
   color: #fff;
@@ -54,9 +61,14 @@
 }
 
 .information {
+  text-align: center;
   @media screen and (min-width:768px) {
     margin-right: 165px;
         margin-bottom: 60px;
+  }
+  @media screen and (min-width:1200px) {
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 

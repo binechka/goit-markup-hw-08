@@ -20,12 +20,16 @@
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     background-color: var(--btn-color);
+    @media screen and (min-width:1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+    }
 }
 
 &__list {
   @media screen and (min-width:768px) {
   // width: 354px;
-  margin-bottom: 30px;
+
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
@@ -46,6 +50,10 @@
   background-color: var(--primary-bg-color);
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
   @media screen and (min-width:768px) {
     margin-bottom: 0;
   }
