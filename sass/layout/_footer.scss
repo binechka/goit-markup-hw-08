@@ -8,8 +8,8 @@
     // width: 768px;
   }
   @media screen and (min-width:1200px) {
-    padding-top: 94px;
-  padding-bottom: 94px;
+    padding-top:60px;
+  padding-bottom: 60px;
      background-color: var(--footer-bg-color);
     display: flex;
   flex-direction: row;
@@ -127,6 +127,11 @@
 }
 @media screen and (min-width:1200px) {
   margin-bottom: 9px;
+
+  &:last-child {
+  margin-bottom: 0;
+}
+
 }
 
 &:hover,

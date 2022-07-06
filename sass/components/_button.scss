@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  gap: 8px;
     }
     @media screen and (min-width:1200px) {
   gap: 8px;
@@ -31,9 +32,7 @@
 }
 
 
-&__item:not(:last-child) {
-  margin-right: 8px;
-}
+
 }
 
 
