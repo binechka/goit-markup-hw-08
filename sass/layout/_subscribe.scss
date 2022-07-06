@@ -45,12 +45,17 @@
    
   }
 }
+
+.subscribe__label {
+  width: 100%;
+}
 .subscribe__input {
   margin: 0;
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
-  width:450px;
+  max-width:450px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
